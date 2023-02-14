@@ -253,7 +253,7 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
 }
 </script>
     <h1>test_report.html</h1>
-    <p>Report generated on 10-Feb-2023 at 10:51:40 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
+    <p>Report generated on 13-Feb-2023 at 11:57:22 by <a href="https://pypi.python.org/pypi/pytest-html">pytest-html</a> v3.2.0</p>
     <h2>Environment</h2>
     <table id="environment">
       <tr>
@@ -261,19 +261,19 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
         <td></td></tr>
       <tr>
         <td>Packages</td>
-        <td>{"pluggy": "1.0.0", "pytest": "7.2.0"}</td></tr>
+        <td>{"pluggy": "1.0.0", "pytest": "7.2.1"}</td></tr>
       <tr>
         <td>Platform</td>
         <td>Windows-10-10.0.22621-SP0</td></tr>
       <tr>
         <td>Plugins</td>
-        <td>{"allure-pytest": "2.12.0", "base-url": "2.0.0", "html": "3.2.0", "metadata": "2.0.4", "playwright": "0.3.0", "reporter": "0.5.2", "reporter-html1": "0.8.2"}</td></tr>
+        <td>{"base-url": "2.0.0", "html": "3.2.0", "metadata": "2.0.4", "playwright": "0.3.0"}</td></tr>
       <tr>
         <td>Python</td>
         <td>3.11.0</td></tr></table>
     <h2>Summary</h2>
-    <p>1 tests ran in 4.73 seconds. </p>
-    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">0 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">1 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
+    <p>8 tests ran in 14.07 seconds. </p>
+    <p class="filter" hidden="true">(Un)check the boxes to filter the results.</p><input checked="true" class="filter" data-test-result="passed" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="passed">8 passed</span>, <input checked="true" class="filter" data-test-result="skipped" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="skipped">0 skipped</span>, <input checked="true" class="filter" data-test-result="failed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="failed">0 failed</span>, <input checked="true" class="filter" data-test-result="error" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="error">0 errors</span>, <input checked="true" class="filter" data-test-result="xfailed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xfailed">0 expected failures</span>, <input checked="true" class="filter" data-test-result="xpassed" disabled="true" hidden="true" name="filter_checkbox" onChange="filterTable(this)" type="checkbox"/><span class="xpassed">0 unexpected passes</span>
     <h2>Results</h2>
     <table id="results-table">
       <thead id="results-table-head">
@@ -284,20 +284,103 @@ function filterTable(elem) { // eslint-disable-line no-unused-vars
           <th class="sortable links" col="links">Links</th></tr>
         <tr hidden="true" id="not-found-message">
           <th colspan="4">No results found. Try to check the filters</th></tr></thead>
-      <tbody class="failed results-table-row">
+      <tbody class="passed results-table-row">
         <tr>
-          <td class="col-result">Failed</td>
-          <td class="col-name">tests/test_elements.py::test_table_data_search[chromium]</td>
-          <td class="col-duration">4.34</td>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_elements.py::test_table_data_search[chromium-7]</td>
+          <td class="col-duration">2.45</td>
           <td class="col-links"></td></tr>
         <tr>
           <td class="extra" colspan="4">
-            <div class="image"><a href="screenshots/tests-test-elements-py-test-table-data-search-chromium/test-failed-1.png"><img src="screenshots/tests-test-elements-py-test-table-data-search-chromium/test-failed-1.png"/></a></div>
-            <div class="log">page = &lt;Page url=&#x27;https://www.lambdatest.com/selenium-playground/table-search-filter-demo&#x27;&gt;, home_page = &lt;pages.home.HomePageClass object at 0x000001470A671150&gt;<br/>table_data_search = &lt;pages.table_data_search.TableDataSearchPageClass object at 0x000001470A67CA50&gt;<br/><br/>    def test_table_data_search(page: Page, home_page: HomePageClass, table_data_search: TableDataSearchPageClass) -&gt; None:<br/>        home_page.selectTableDemo(&#x27;Table Data Search&#x27;)<br/>        table_data_search.searchTable(&#x27;Landing Page&#x27;)<br/>&gt;       assert table_data_search.verifySearchResult(&#x27;Landing Page&#x27;)<br/><span class="error">E       AssertionError: assert False</span><br/><span class="error">E        +  where False = &lt;bound method TableDataSearchPageClass.verifySearchResult of &lt;pages.table_data_search.TableDataSearchPageClass object at 0x000001470A67CA50&gt;&gt;(&#x27;Landing Page&#x27;)</span><br/><span class="error">E        +    where &lt;bound method TableDataSearchPageClass.verifySearchResult of &lt;pages.table_data_search.TableDataSearchPageClass object at 0x000001470A67CA50&gt;&gt; = &lt;pages.table_data_search.TableDataSearchPageClass object at 0x000001470A67CA50&gt;.verifySearchResult</span><br/><br/>tests\test_elements.py:135: AssertionError<br/> ------------------------------Captured stdout call------------------------------ <br/>&gt;&gt;&gt;&gt; None &lt;&lt;&lt;&lt;
-&gt;&gt;&gt;&gt; None &lt;&lt;&lt;&lt;
-&gt;&gt;&gt;&gt; None &lt;&lt;&lt;&lt;
-&gt;&gt;&gt;&gt; None &lt;&lt;&lt;&lt;
-&gt;&gt;&gt;&gt; None &lt;&lt;&lt;&lt;
-&gt;&gt;&gt;&gt; None &lt;&lt;&lt;&lt;
-&gt;&gt;&gt;&gt; None &lt;&lt;&lt;&lt;
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_elements.py::test_table_filter_search[chromium-user id-4]</td>
+          <td class="col-duration">1.68</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; None &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_elements.py::test_table_data_search[chromium-Landing Page]</td>
+          <td class="col-duration">1.45</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_elements.py::test_table_filter_search[chromium-task-Bootstrap 3]</td>
+          <td class="col-duration">1.89</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; None &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_elements.py::test_table_data_search[chromium-Mike Trout]</td>
+          <td class="col-duration">1.41</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_elements.py::test_table_filter_search[chromium-name-Holden Charles]</td>
+          <td class="col-duration">1.65</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; None &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+<br/></div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_elements.py::test_table_data_search[chromium-completed]</td>
+          <td class="col-duration">1.45</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="empty log">No log output captured.</div></td></tr></tbody>
+      <tbody class="passed results-table-row">
+        <tr>
+          <td class="col-result">Passed</td>
+          <td class="col-name">tests/test_elements.py::test_table_filter_search[chromium-progress-failed qa]</td>
+          <td class="col-duration">2.00</td>
+          <td class="col-links"></td></tr>
+        <tr>
+          <td class="extra" colspan="4">
+            <div class="log"> ------------------------------Captured stdout call------------------------------ <br/>&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; None &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
+&gt;&gt;&gt; None &lt;&lt;&lt;
+&gt;&gt;&gt; display: none; &lt;&lt;&lt;
 <br/></div></td></tr></tbody></table></body></html>
